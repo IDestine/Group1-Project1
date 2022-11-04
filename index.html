@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Starter Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+        <h1 class="text-2xl">No Stop Music Shop</h1>
+        <p>Find all of your favorite artists, songs, albums, lyrics, etc...</p>
+    </header>
+
+    <main class="grid-x">
+        <aside id="aside">
+            <input class="text-input" type="text" placeholder="Search By Artist">
+            <button class="button large" type="button" onclick="console.log('hi')">Search</button>
+        </aside>
+        <section id="results" class="cell grid-x flex-container flex-dir-row">
+            <h2 class="cell">Artist Name</h2>
+            <div class="cell flex-container flex-dir-row">
+                <img src="https://www.biography.com/.image/t_share/MTQ3NjM5MTEzMTc5MjEwODI2/eminem_photo_by_dave_j_hogan_getty_images_entertainment_getty_187596325.jpg" class="artist-img" alt="">
+                <div id="top-songs">
+                    <ol id="top-songs-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="cell" id="albums">
+                <ul>
+                    <li>
+                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://media.npr.org/assets/img/2013/04/22/dark-side_sq-1da3a0a7b934f431c175c91396a1606b3adf5c83-s1100-c50.jpg" alt=""></button>
+                    </li>
+                    <li>
+                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg" alt=""></button>
+                    </li>
+                    <li>
+                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://media.npr.org/assets/img/2013/04/22/dark-side_sq-1da3a0a7b934f431c175c91396a1606b3adf5c83-s1100-c50.jpg" alt=""></button>
+                    </li>
+                    <li>
+                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://cdn.pocket-lint.com/r/s/320x/assets/images/134579-gadgets-feature-53-of-the-worst-album-covers-of-all-time-image22-sl1hcqpb5o.jpg?v1" alt=""></button>
+                    </li>
+                    <li>
+                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Coldplay_-_Parachutes.png" alt=""></button>
+                    </li>
+                    <li>
+                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Green_Day_-_American_Idiot_album_cover.png" alt=""></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="cell">
+            <h2>Recommended artists:</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/what-input@5.2.12/dist/what-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>
