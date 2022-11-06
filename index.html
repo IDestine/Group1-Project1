@@ -4,76 +4,120 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Starter Template</title>
+    <title>No Stop Music Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
-    <header id="header">
-        <h1 class="text-2xl">No Stop Music Shop</h1>
-        <p>Find all of your favorite artists, songs, albums, lyrics, etc...</p>
+    <header>
+        <h1>No Stop Music Shop</h1>
+        <p>Find all of your favorite artists, songs, albums, lyrics, etc.</p>
     </header>
 
-    <main class="grid-x">
-        <aside id="aside">
+    <main>
+        <aside>
             <input class="text-input" type="text" placeholder="Search By Artist">
             <button class="button large" type="button" onclick="console.log('hi')">Search</button>
         </aside>
-        <section id="results" class="cell grid-x flex-container flex-dir-row">
-            <h2 class="cell">Artist Name</h2>
-            <div class="cell flex-container flex-dir-row">
-                <img src="https://www.biography.com/.image/t_share/MTQ3NjM5MTEzMTc5MjEwODI2/eminem_photo_by_dave_j_hogan_getty_images_entertainment_getty_187596325.jpg" class="artist-img" alt="">
-                <div id="top-songs">
-                    <ol id="top-songs-list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ol>
-                </div>
+        <section id="results">
+            <h2 id="artist-name">Imagine Dragons</h2>
+            <div style="width: 100%;"></div>
+            <img src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg" class="artist-img" alt="">
+            <div id="top-songs-div">
+                <h4>Top Songs:</h4>
+                <ol id="top-songs-list">
+                    <li>Believer</li>
+                    <li>Thunder</li>
+                    <li>Radioactive</li>
+                </ol>
             </div>
-            <div class="cell" id="albums">
-                <ul>
-                    <li>
-                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://media.npr.org/assets/img/2013/04/22/dark-side_sq-1da3a0a7b934f431c175c91396a1606b3adf5c83-s1100-c50.jpg" alt=""></button>
-                    </li>
-                    <li>
-                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg" alt=""></button>
-                    </li>
-                    <li>
-                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://media.npr.org/assets/img/2013/04/22/dark-side_sq-1da3a0a7b934f431c175c91396a1606b3adf5c83-s1100-c50.jpg" alt=""></button>
-                    </li>
-                    <li>
-                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://cdn.pocket-lint.com/r/s/320x/assets/images/134579-gadgets-feature-53-of-the-worst-album-covers-of-all-time-image22-sl1hcqpb5o.jpg?v1" alt=""></button>
-                    </li>
-                    <li>
-                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Coldplay_-_Parachutes.png" alt=""></button>
-                    </li>
-                    <li>
-                        <button class="album-cover" type="button" onclick="console.log('hi')"><img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Green_Day_-_American_Idiot_album_cover.png" alt=""></button>
-                    </li>
-                </ul>
-            </div>
+
+            <div style="width: 100%;"></div>
+            <hr>
+
+            <ul class="cover-array">
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://t2.genius.com/unsafe/864x0/https%3A%2F%2Fimages.genius.com%2Ffc562c15be953b21b0ba1ef1a30ad3c6.1000x1000x1.jpg" alt="">
+                        <p class="img-caption">Night Visions</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://t2.genius.com/unsafe/864x0/https%3A%2F%2Fimages.genius.com%2F332b8c45e973299ba758924c481533d5.1000x1000x1.jpg" alt="">
+                        <p class="img-caption">Mercury</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://t2.genius.com/unsafe/864x0/https%3A%2F%2Fimages.genius.com%2F5663dc2d2082be46636a66e58e7d0188.600x600x1.jpg" alt="">
+                        <p class="img-caption">Origins</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://t2.genius.com/unsafe/864x0/https%3A%2F%2Fimages.genius.com%2Ff258673d4d0d2748c8bd2693bcdd6440.1000x1000x1.jpg" alt="">
+                        <p class="img-caption">Evolve</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://t2.genius.com/unsafe/864x0/https%3A%2F%2Fimages.genius.com%2Fed642585af615d684aae01a746b5d900.910x910x1.jpg" alt="">
+                        <p class="img-caption">Smoke + Mirrors</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://t2.genius.com/unsafe/1071x0/https%3A%2F%2Fimages.genius.com%2Fb43eeacb5eda5f1a05ff4aa0a835329c.1000x1000x1.jpg" alt="">
+                        <p class="img-caption">Deep Cuts</p>
+                    </button>
+                </li>
+            </ul>
         </section>
         
-        <section class="cell">
+        <section id="reccomendations">
             <h2>Recommended artists:</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <div style="width: 100%;"></div>
+            <ul class="cover-array">
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://cdn1.umg3.net/684/files/2022/08/BASTILLE_ARTWORK.jpg" alt="">
+                        <p class="img-caption">Bastille</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://d1gdi8qinx8x49.cloudfront.net/540x540/96133.jpeg" alt="">
+                        <p class="img-caption">Ed Sheeran</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Beneath_the_Skin.png" alt="">
+                        <p class="img-caption">Of Monsters and Men</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="img-button" type="button" onclick="console.log('hi')">
+                        <img src="https://images.genius.com/52607f8751b7104a9a22e30a62b701d9.1000x1000x1.png" alt="">
+                        <p class="img-caption">The Neighbourhood</p>
+                    </button>
+                </li>
+                </li>
             </ul>
         </section>
     </main>
 
     <footer>
         <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">About</a></li>
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="#">Developers</a></li>
+            <li><a class="footer-link" href="#">About</a></li>
         </ul>
     </footer>
 
