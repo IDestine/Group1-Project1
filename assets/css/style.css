@@ -1,16 +1,51 @@
 :root {
-    --cyan: #E9FFF9;
-    --blue: #006E90;
+    --primary-bg: #f0f0f0;
+    --secondary-bg: #fefefe;
     --purple: #513B56;
     --melon: #E0AFA0;
     --red: #944654;
+
+    --text-color: #0a0a0a;
+
+    --img-large: 400px;
+    --img-medium: 300px;
+    --img-small: 200px;
 }
 
+/*** Global settings ***/
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-bg);
+    margin: 1em;
+    padding: 1em;
+    align-items: center;
+}
+
+li, p {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button, button:hover {
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    max-width: 100%;
+}
 
 body {
-    background-color: var(--cyan);
+    background-color: var(--primary-bg);
 }
+
+/*** Header ***/
 
 header {
     display: flex;
@@ -18,58 +53,97 @@ header {
     align-items: center;
 }
 
+/*** Main ***/
+
 main {
-    color: var(--cyan);
+    display: flex;
+    color: var(--text-color);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-h2 {
+/*** Aside (ie the search bar and later on, history) ***/
+
+aside {
+    height: fit-content !important;
+    width: 300px;
+    background-color: var(--secondary-bg);
+    margin: 1em;
+    padding: 1em;
+
+}
+
+@media screen and (max-width: 1020px) {
+    aside {
+        flex-grow: 1;
+    }
+}
+
+/*** Results Section ***/
+
+#results {
+    width: calc(100vw - 300px - 6em);
+    min-width: 640px;
+}
+
+@media screen and (max-width: 1020px) {
+    #results {
+        flex-grow: 1;
+    }
+}
+
+#artist-name {
+    width: var(--img-large);
     text-align: center;
 }
 
-aside {
-    width: 20%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--blue);
-    padding: 1em;
-    margin: 1em;
-}
-
-button {
-    cursor: pointer;
-}
-
-ul {
-    list-style-type: none;
-}
-
-section {
-    background-color: var(--blue);
-    margin: 1em;
-}
-
-#results {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#top-songs {
-    display: flex;
-    align-items: center;
-
-}
-
 .artist-img {
-    width: 300px;
-    height: 300px;
+    width: var(--img-large);
+    height: var(--img-large);
+    padding: 0.5em;
+    border-radius: 1000px;
+}
+
+#top-songs-div {
+    margin-left: 50px
+}
+
+.cover-array {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 1em;
+    justify-content: space-around;
+}
+
+.img-button img {
+    width: var(--img-medium);
+    height: var(--img-medium);
+}
+
+.img-caption {
     padding: 1em;
 }
 
-.album-cover {
-    width: 400px;
-    height: 400px;
+/*** Reccomendations Section ***/
+
+#reccomendations {
+    flex-direction: column;
+    flex: 1;
+}
+
+footer {
+    padding: 2em;
+    background-color: #232629;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-link, .footer-link:hover {
+    color: #f0f0f0
 }
