@@ -16,7 +16,7 @@
   <body>
     <header>
         <h1>No Stop Music Shop</h1>
-        <p>Find all of your favorite artists, songs, albums, lyrics, etc.</p>
+        <p>Find all of your favorite artists, songs, and albums</p>
     </header>
 
     <main>
@@ -25,9 +25,10 @@
             <button id="search-btn" class="button large" type="button">Search</button>
             <ul id="search-history">
             </ul>
+            <button id="clear-btn" class="button large" type="button" onclick="localStorage.clear(); renderSearchHistory()">Clear Search History</button>
         </aside>
         <section id="results">
-            <h2 id="artist-name">fasdfdas</h2>
+            <h2 id="artist-name"></h2>
             <div style="width: 100%;"></div>
             <!-- <img src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg" class="artist-img" alt="">
             <div id="top-songs-div">
