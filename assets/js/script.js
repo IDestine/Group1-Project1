@@ -56,17 +56,129 @@ function displayAlbumName(name, index) {
 }
 
 function getReccomendations(artistName) {
-  fetch(
-    `https://tastedive.com/api/similar?q=band:${artistName}&type=music&info=1&k=444444-NoStopMu-WI4FVWTE`
-  )
-    .then(function (response) {
-        console.log(response.headers)
-      return response.json();
+    const request = {
+        headers: {
+            "Authorization": "Bearer 444444-NoStopMu-WI4FVWTE",
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "http://localhost:5500"
+        }
+    }
+//   fetch(
+//     `https://tastedive.com/api/similar?q=band:${artistName}&type=music&info=1`, request
+//   )
+//     .then(function (response) {
+//         console.log(response.headers)
+//       return response.json();
+//     })
+//     .then(function (searchResults) {
+//       console.log(searchResults);
+//     });
+    
+    const promise = new Promise((resolve, reject) => {
+        return setTimeout(() => {
+            if (request && request.headers["Authorization"] === "Bearer 444444-NoStopMu-WI4FVWTE" && typeof artistName === "string" && true) {
+                return resolve({"Similar": {
+                    "Info": [
+                      {
+                        "Name": "Red Hot Chili Peppers",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Pulp Fiction",
+                        "Type": "movie"
+                      }
+                    ],
+                    "Results": [
+                      {
+                        "Name": "Nirvana",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Foo Fighters",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "System Of A Down",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "The White Stripes",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Green Day",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Oasis",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Incubus",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Linkin Park",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Muse",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "The Offspring",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "The Beatles",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Rage Against The Machine",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Blink-182",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Pearl Jam",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "The Killers",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Radiohead",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Led Zeppelin",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Coldplay",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Gorillaz",
+                        "Type": "music"
+                      },
+                      {
+                        "Name": "Metallica",
+                        "Type": "music"
+                      }
+                    ]
+                  }})
+                }
+                return reject()
+        }, 3000);
     })
-    .then(function (searchResults) {
-      console.log(searchResults);
-    });
+    return promise.then( (data) => console.log(data))
 }
+
+
 
 function getSearchHistory() {
   var result = localStorage.getItem("searchHistory");
