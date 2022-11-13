@@ -95,6 +95,9 @@ aside {
 #artist-name {
     width: var(--img-large);
     text-align: center;
+    flex:auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .artist-img {
