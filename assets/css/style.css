@@ -10,12 +10,14 @@
     --img-large: 400px;
     --img-medium: 300px;
     --img-small: 200px;
+
+    --results-display: none;
 }
 
 /*** Global settings ***/
 
 section {
-    display: flex;
+    display: var(--results-display);
     flex-wrap: wrap;
     background-color: var(--secondary-bg);
     margin: 1em;
@@ -43,6 +45,7 @@ hr {
 
 body {
     background-color: var(--primary-bg);
+    min-height: 100vh;
 }
 
 /*** Header ***/
@@ -137,6 +140,8 @@ aside {
 }
 
 footer {
+    position: absolute;
+    width: 100%;
     padding: 2em;
     background-color: #232629;
 }
