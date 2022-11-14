@@ -40,7 +40,7 @@ async function searchArtist(artistName, addToHistory = true) {
 
   document.querySelector(':root').style.setProperty('--results-display', 'flex')
 
-  var searchResult = await get(`http://musicbrainz.org/ws/2/release-group?query=artist:"${artistName}"%20AND%20NOT%20secondarytype:*%20AND%20primarytype:album&fmt=json`)
+  var searchResult = await get(`https://musicbrainz.org/ws/2/release-group?query=artist:"${artistName}"%20AND%20NOT%20secondarytype:*%20AND%20primarytype:album&fmt=json`)
 
   if (searchResult.count === 0) {
     alert("No artist found!");
@@ -126,7 +126,7 @@ async function displayRecArtists(artistName)  {
 }
 
 async function getAlbums(artistName) {
-    var results = await get(`http://musicbrainz.org/ws/2/release-group?query=artist:"${artistName}"%20AND%20NOT%20secondarytype:*%20AND%20primarytype:album&fmt=json`)
+    var results = await get(`https://musicbrainz.org/ws/2/release-group?query=artist:"${artistName}"%20AND%20NOT%20secondarytype:*%20AND%20primarytype:album&fmt=json`)
     return results["release-groups"]
 }
 
