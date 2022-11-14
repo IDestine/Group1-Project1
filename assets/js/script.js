@@ -111,16 +111,17 @@ async function displayRecArtists(artistName)  {
   var searchResults = await get(`${urlPrefix}https://tastedive.com/api/similar?q=${artistName}&type=music&k=444444-NoStopMu-WI4FVWTE`)
   var resultsList = searchResults.Similar.Results
     for (let i = 0; i < recArtistNameArr.length; i++) {
-        var name = resultsList[i].Name
-        recArtistNameArr[i].innerText = name
+      console.log(resultsList)
+      var name = resultsList[i].Name
+      recArtistNameArr[i].innerText = name
 
-        var artistImgEle = recArtistImgArr[i]
-        var releaseGroups = await getAlbums(name)
+      var artistImgEle = recArtistImgArr[i]
+      var releaseGroups = await getAlbums(name)
 
-        artistImgEle.parentElement.setAttribute('onclick', `searchArtist('${name}')`)
-        console.log(artistImgEle)
+      artistImgEle.parentElement.setAttribute('onclick', `searchArtist('${name}')`)
+      console.log(artistImgEle)
 
-        displayCover(releaseGroups[0], artistImgEle)
+      displayCover(releaseGroups[0], artistImgEle)
     }
 }
 
