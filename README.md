@@ -32,12 +32,12 @@ The following image shows the web application's appearance and functionality:
 ![musicapp](https://user-images.githubusercontent.com/113458061/201806944-19789637-87a1-4499-9a8e-a949890d51a7.jpg)
 
 ## Developers
-Jared Schips
-Omar Correa
-Isaiah Destine
+Jared Schips, 
+Omar Correa, 
+Isaiah Destine, &
 Brianna Reid
 
-##GitHub link
+## GitHub link
 https://github.com/IDestine/Group1-Project1
 
 ## Live Site
